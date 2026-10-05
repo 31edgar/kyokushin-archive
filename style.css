@@ -1,0 +1,141 @@
+
+
+body {
+    background-color: #0D1117;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+}
+
+header {
+
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 550;
+
+    color: #d2d2d3;
+    letter-spacing: -0.75px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 1rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    padding: 0;
+    
+    flex-grow: 1; 
+    justify-content: flex-end; 
+}
+
+header nav a{
+    text-decoration: none;
+    color: #d2d2d3;
+    font-weight: bolder;
+}
+
+header nav a:hover{
+    color: #8a8a8a;
+}
+
+#title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3.4rem;
+    font-family: monospace;
+    color: #d2d2d3;
+}
+
+
+#title {
+    margin-bottom: 0;
+    user-select: none;
+}
+
+h2 {
+    color: #8a8a8aea;
+    font-size: 2rem;
+}
+
+#subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5rem;
+    user-select: none;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0rem;
+
+
+}
+
+#site-search {
+    height: 2.4rem;
+    width: 45rem;
+    font-size: 1.1rem;
+    border-radius: 3.5rem;
+    border-width: 0.19rem;
+
+    background-color: #242424;
+    color: #d2d2d3;
+    padding: 1.2rem 1rem;
+    transition: border-color 0.3s;
+
+    
+
+}
+
+#site-search:focus {
+    outline: none;
+    border-color: rgb(201, 47, 47);
+    transition: border-color 0.35s;
+}
+
+#filter-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 5rem;
+}
+
+#filter-section p {
+    margin-right: 0.7rem;
+}
+
+#filter-section button {
+    height: auto;
+    margin: 0 0.2rem;
+
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    color: #d2d2d3;
+    background-color: #242424;
+    border-width: 0rem;
+    border-color: #8a8a8a;
+    border-radius: 0.35rem;
+    
+    font-weight: 505;
+
+    transition: background-color ease-in-out 0.2s;
+
+}
+
+#filter-section button:hover {
+    background-color: rgb(201, 47, 47);
+
+    transition: background-color ease-in-out 0.1s;
+}
