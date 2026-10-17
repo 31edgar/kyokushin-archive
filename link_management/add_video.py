@@ -1,3 +1,5 @@
+# Author: 31edgar
+
 import yt_dlp
 import os
 import json
@@ -31,9 +33,6 @@ def extract_metadata(url):
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         info = ydl.extract_info(url, download=False)
         
-        raw_date = info.get("upload_date")
-        year = int(raw_date[:4]) if raw_date else 2000
-        
         return {
             "title": info.get("title", ""),
             "author": info.get("uploader", ""),
@@ -41,6 +40,7 @@ def extract_metadata(url):
             "embedId": info.get("id", ""),
             "categories": [],
             "description": info.get("description", "")[:200],  # Primeros 200 caracteres
+            "thumbnail" : info.get("thumbnail", "")
         }
 
 def save_json(json_file, data):
@@ -63,6 +63,7 @@ def main():
             "embedId": metadata["embedId"],
             "categories": metadata["categories"],
             "description": metadata["description"],
+            "thumbnail": metadata["thumbnail"]
         }
 
         videos.append(new_video)

@@ -1,13 +1,20 @@
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Oculta cualquier elemento que sobresalga a los lados */
+  margin: 0;
+  padding: 0;
+}
 
+/* Incluye borders y paddings dentro del ancho total de los elementos */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 body {
     background-color: #0D1117;
     font-family: monospace, Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
-}
-
-header {
-
 }
 
 p {
@@ -138,4 +145,46 @@ h2 {
     background-color: rgb(201, 47, 47);
 
     transition: background-color ease-in-out 0.1s;
+}
+
+#grid-videos {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+
+    max-width: 1680px; 
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #161e29;
+    border-radius: 0.6rem;
+    width: 100%;
+
+    transition: width height ease 0.3s;
+
+}
+
+.card:hover {
+    width: 101%;
+    height: 101%;
+
+    transition: all ease 0.5s;
+}
+
+.card h3 {
+    color: #cecccc;
+    letter-spacing: -1.5px;
+    font-size: 1.15rem;
+    margin-bottom: -0.25rem;
+}
+
+.card img {
+    border-radius: 0.3rem;
 }
