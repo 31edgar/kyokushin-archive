@@ -149,7 +149,7 @@ h2 {
 #grid-videos {
     display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     padding: 20px;
     width: 100%;
@@ -164,7 +164,7 @@ h2 {
     padding: 20px;
     background-color: #161e29;
     border-radius: 0.6rem;
-    width: 100%;
+    width: 19.4rem;
 
     transition: background-color ease 1s;
 }
