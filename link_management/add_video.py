@@ -39,7 +39,7 @@ def extract_metadata(url):
             "duration": info.get("duration", ""),
             "embedId": info.get("id", ""),
             "categories": [],
-            "description": info.get("description", "")[:200],  # Primeros 200 caracteres
+            "description": info.get("description", "")[:600],
             "thumbnail" : info.get("thumbnail", "")
         }
 
