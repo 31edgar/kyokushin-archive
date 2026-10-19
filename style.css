@@ -191,6 +191,8 @@ h2 {
 
 .card img {
     border-radius: 0.3rem;
+    object-fit: cover;
+    height: 10rem;
 }
 
 #video-modal {
