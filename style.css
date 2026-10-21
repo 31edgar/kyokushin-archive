@@ -272,20 +272,90 @@ hr {
     font-size: 1.2rem;
 }
 
-/* PURPOSE STYLES */
+/* SECITON STYLES */
 
-#purpose-title {
+.section-title {
     color:#8a8a8a;
 }
 
-#purpose-text-container {
+.section-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#purpose-text-container p {
+.section-container p {
     width: 50%;
 }
 
+/* FORM STYLES */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.form-group label {
+    color:#8a8a8a;
+    margin-right: 3rem;
+    letter-spacing: -1px;
+
+}
+
+.form-group input {
+    width: 30rem;
+    height: 2rem;
+    font-size: 1.1rem;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    letter-spacing: -0.8px;
+    background-color: #b2b3b3;
+}
+
+.form-group textarea {
+    width: 30rem;
+    font-size: 1rem;
+    letter-spacing: -0.8px;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    resize: none;
+    background-color: #b2b3b3;
+}
+
+.submit-btn {
+    height: auto;
+    margin-left: 8.5rem;
+
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    color: #d2d2d3;
+    border-width: 0rem;
+    border-color: #8a8a8a;
+    background-color: rgb(201, 47, 47);
+    border-radius: 0.35rem;
+
+
+    
+    font-weight: 505;
+
+    transition: background-color ease-in-out 0.2s;
+
+}
+
+.submit-btn:hover {
+    background-color: #242424;
+
+    transition: background-color ease-in-out 0.1s;
+}
+
+.submit-btn:active {
+    background-color: #333333;
+    transition: background-color ease-in-out 0.1s;
+
+}
